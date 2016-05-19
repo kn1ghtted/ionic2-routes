@@ -1,6 +1,6 @@
 <ion-navbar *navbar>  
     <ion-title>
-        GitHub
+        Schedule List
     </ion-title>
 </ion-navbar>
 
@@ -12,14 +12,15 @@
         </ion-item>
     </ion-list>
     <div padding>
-        <button block (click)="getRepos()">Search</button>
+        <button block (click)="getRoutes()">Get Routes</button>
     </div>
-    <ion-card *ngFor="#repo of foundRepos">
-        <ion-card-header>
-            {{ repo.name }}
-        </ion-card-header>
-        <ion-card-content>
-            {{ repo.description }}
-        </ion-card-content>
-    </ion-card>
-</ion-content>  
+    <ion-list class = "scheduleList">
+        <ion-item class = "route" *ngFor="#route of selectedRoutes">
+            <p style = "font-size : 3rem">{{ route.name }}</p>
+            <p style = "font-size : 1.5rem">{{ route.description }}</p>
+            <div> 
+              <button (click)="showNav(route)"> Button </button>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
