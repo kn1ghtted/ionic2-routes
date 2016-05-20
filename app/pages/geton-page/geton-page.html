@@ -1,0 +1,44 @@
+<ion-navbar class="bar-positive" *navbar>
+  <ion-title>
+    Select Destination with {{ item.title }}
+  </ion-title>
+<!--   <p style = "margin-top : 40px; text-align : center"> sub-title </p>
+ -->
+</ion-navbar>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item class="list-stop" *ngFor = "#stop of stops">
+    <ion-row>
+      <ion-col>
+        <button dark clear class = "stop-name">{{stop.name}} </button>
+      </ion-col>
+      <ion-col class = "arrival-col">
+        <p class = "arrival-time">{{stop.time}}</p>
+      </ion-col>
+    </ion-row>
+    </ion-item>
+<!--     <div *ngFor="#bus of nearbyRoutes">
+      <ion-item class="list-item" *ngIf="bus.selected">
+          <ion-row class = "detail">
+            <ion-col width-25 class="title">
+              {{bus.title}}
+            </ion-col>
+            <ion-col width-50 class="info">
+              <p>{{bus.direction}}: {{bus.dest}}</p>
+              <p>{{bus.stop}}</p>
+            </ion-col>
+            <ion-col width-25 class="time">
+              <strong style="font-size:30px">{{bus.time}}</strong> min
+            </ion-col>
+          </ion-row>
+          <ion-row class="button-row">
+            <button ion-item>Get On</button>
+            <button ion-item>Chat</button>
+            <button ion-item>Route</button>
+            <button ion-item>Favorite</button>
+          </ion-row>
+      </ion-item>
+    </div> -->
+  </ion-list>
+</ion-content>
