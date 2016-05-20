@@ -13,9 +13,18 @@ export var MOCK_ROUTES: Route[] = [
       {"name" : "Fifth Ave opp Belle fibte St", "time" : "9 min"},
       {"name" : "Fifth Ave at Negley Ave", "time" : "11 min"}
     ]
+  },
+  {"id": 12, "name": "61C", "description" : "Inbound",
+    "stops" : [
+      {"name" : "Fifth Ave opp Maryland Ave", "time" : "14 min"},
+      {"name" : "Fifth Ave opp College St", "time" : "15 min"},
+      {"name" : "Highland Ave at Fifth Avenue", "time" : "18 min"}
+    ]
+  },
+  {"id": 12, "name": "61C", "description" : "Outbound",
+    "stops" : [
+      {"name" : "Highland Ave at Walnut St", "time" : "19 min"},
+      {"name" : "Highland Ave opp Elwood St", "time" : "21 min"}
+    ]
   }
-  // {"id": 12, "name": "61C", "description" : "Inbound",},
-  // {"id": 12, "name": "61C", "description" : "Outbound"}, 
-  // {"id": 13, "name": "61A", "description" : "Inbound"},
-  // {"id": 13, "name": "61A", "description" : "Outbound"}
 ];
